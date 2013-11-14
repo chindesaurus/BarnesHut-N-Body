@@ -1,0 +1,18 @@
+Universe quadrant
+ midpoint (0.0,0.0)  length 200.0
+Barnes-Hut tree
+* 6.667E 00 -6.667E 00  0.000E 00  0.000E 00  1.500E 01
+*-1.667E 01  2.500E 01  0.000E 00  0.000E 00  6.000E 00
+ null
+  1.048E-21  5.000E 01  1.048E-20 -7.591E-20  3.000E 00
+ -5.000E 01 -1.048E-21  7.898E-20 -1.048E-20  2.000E 00
+  1.482E-21 -1.482E-21  1.482E-20 -1.482E-20  1.000E 00
+  5.000E 01 -1.048E-21 -6.416E-20 -1.048E-20  4.000E 00
+  1.048E-21 -5.000E 01  1.048E-20  6.109E-20  5.000E 00
+ null
+
+/* Note that all 5 of the bodies in test5.txt are on
+   quad borders.  Your tree structure and internal nodes
+   may be different from the ones above, however, all
+   five of the bodies should have the same position, 
+   velocity and mass as those shown above.            */
