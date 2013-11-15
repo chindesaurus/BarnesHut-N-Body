@@ -23,9 +23,13 @@ public class BHTree {
     private BHTree SW;     // tree representing southwest quadrant
     private BHTree SE;     // tree representing southeast quadrant
   
-    // Creates a new Barnes-Hut tree with no bodies. 
-    // Each BHTree represents a quadrant and an aggregate body 
-    // that represents all bodies inside the quadrant
+    /**
+     * Constructor: creates a new Barnes-Hut tree with no bodies. 
+     * Each BHTree represents a quadrant and an aggregate body 
+     * that represents all bodies inside the quadrant.
+     *
+     * @param q the quadrant this node is contained within
+     */
     public BHTree(Quad q) {
         this.quad = q;
         this.body = null;
@@ -136,7 +140,11 @@ public class BHTree {
 
 
     /**
-     * Returns a string representation of the Barnes-Hut tree.
+     * Returns a string representation of the Barnes-Hut tree
+     * in which spaces represent external nodes, and asterisks
+     * represent internal nodes.
+     *
+     * @return a string representation of this quadtree
      */
     public String toString() {
         if (isExternal()) 
@@ -144,4 +152,4 @@ public class BHTree {
         else
             return "*" + body + "\n" + NW + NE + SW + SE;
     }
-} 
+}
